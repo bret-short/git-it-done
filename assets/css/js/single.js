@@ -32,8 +32,7 @@ var getRepoIssues = function(repo) {
       });
     }
     else {
-      console.log(response);
-      alert("There was a problem with your request!");
+      document.location.replace("./index.html");
     }
   });
 };
@@ -92,7 +91,5 @@ var displayWarning = function(repo) {
   // append to warning container
   limitWarningEl.appendChild(linkEl);
 };
-
-getRepoIssues();
 
 getRepoName();
